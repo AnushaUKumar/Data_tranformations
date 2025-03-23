@@ -52,23 +52,23 @@ ID,Age,Salary,Score
 Formula: x_scaled = (x - min(x)) / (max(x) - min(x))
 
 What it does:
--Rescales data to a fixed range, typically [0, 1].
--Preserves the relationships between data points.
--Sensitive to outliers.
+- Rescales data to a fixed range, typically [0, 1].
+- Preserves the relationships between data points.
+- Sensitive to outliers.
 
 Use when:
-You need normalized values (e.g., for neural networks or distance-based algorithms like KNN).
+- You need normalized values (e.g., for neural networks or distance-based algorithms like KNN).
 
 # 2. Z-Score Standardization (Standard Scaling)
 Formula: x_standardized = (x - mean(x)) / std(x)
 
 What it does:
--Centers the data around 0 with a standard deviation of 
--Assumes the data is normally distributed.
--Not bounded to a fixed range.
+- Centers the data around 0 with a standard deviation of 
+- Assumes the data is normally distributed.
+- Not bounded to a fixed range.
 
 Use when:
-The algorithm assumes Gaussian distribution (e.g., linear regression, logistic regression, SVM).
+- The algorithm assumes Gaussian distribution (e.g., linear regression, logistic regression, SVM).
 
 # 3. Robust Scaling
 Formula: x_robust = (x - median(x)) / IQR(x)
@@ -76,21 +76,24 @@ Formula: x_robust = (x - median(x)) / IQR(x)
 Where IQR is the interquartile range (Q3 - Q1).
 
 What it does:
-
--Uses the median and IQR instead of mean and standard deviation.
--Reduces the influence of outliers significantly.
+- Uses the median and IQR instead of mean and standard deviation.
+- Reduces the influence of outliers significantly.
 
 Use when:
--Your data contains outliers and you want a scaling method that is robust to them.
+- Your data contains outliers and you want a scaling method that is robust to them.
 
 # Screenshot
-Comparison of the orginal feature with Min Max Scaling
+
+**Comparison of the orginal feature with Min Max Scaling** 
+
 ![Min-Max Scaling](minmax.png)  
 
-Comparison of the orginal feature with Zscore Scaling
+**Comparison of the orginal feature with Zscore Scaling**
+
 ![Z=Score](zscore.png)
 
-Comparison of the orginal feature with Robust Scaling
+**Comparison of the orginal feature with Robust Scaling**
+
 ![Robust](robust.png) 
 
 
