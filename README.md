@@ -84,7 +84,13 @@ Use when:
 -Your data contains outliers and you want a scaling method that is robust to them.
 
 # Screenshot
-A side-by-side layout with controls and graph output:
-![Min-Max Scaling](minmax.png)  ![Z=Score](zscore.png) ![Robust](robust.png) 
+Comparison of the orginal feature with Min Max Scaling
+![Min-Max Scaling](minmax.png)  
+
+Comparison of the orginal feature with Zscore Scaling
+![Z=Score](zscore.png)
+
+Comparison of the orginal feature with Robust Scaling
+![Robust](robust.png) 
 
 
